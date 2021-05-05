@@ -1,5 +1,34 @@
 [
   {
+    "path": "posts/2021-04-22-team-7/",
+    "title": "NewsChekt",
+    "description": "NewsChekt tries to address news bias by providing fact-check functionality, hightlighting strong adjectives and encouraging users to consumer a diverse portfolio of news.",
+    "author": [
+      {
+        "name": "Arnav Joshi",
+        "url": {}
+      },
+      {
+        "name": "Jinna Han",
+        "url": {}
+      },
+      {
+        "name": "Jonathan Webb",
+        "url": {}
+      },
+      {
+        "name": "Minna Zheng",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-04",
+    "categories": [],
+    "contents": "\nProblem Statement\nNews and media bias permeate our social media and news consumption experience. Targeted algorithms repeatedly push similar news and information to users and lead to confirmation bias. This makes it difficult for people to engage their System 2 thinking and consider alternative narratives of the same news.\nUser Personas\nPersona 1\n\nPersona 2\n\nPersona 3\n\nConversation Starters\nHow do you read the news? (what apps do you use, or paper news, what sources do you read from)\nHow often do you read the news and how much time do you spend reading the news?\nWhat makes news outlets trustworthy and credible for you?\nShow logos of news outlets (CNN, Fox, OAN). What do you think of these outlets?\nDo you find the fact-checking feature on Twitter to be useful?\nUser Interviews\nInvestment Banking Professional\nThe interview was conducted in the 2nd week of April over Zoom.\nThe key takeaway was that the person did not engage with news online very deeply (did not read it often and did not spend a lot of time reading it) and only engaged with news online if it was alarming or attention-grabbing.\nConstruction Worker\nThis interview was conducted in the 1st week of April over Zoom.\nThe surprising thing that we learned from this interview is that the user was suspicious of not just one, but all media outlets as he believed that all of them had an underlying agenda.\nNews Editor\nThis interview was conducted in the 2nd week of April over Zoom.\nThe news editor acknowledged the fact that more and more media outlets are trying to cater to their specific audiences. This necessitates checking news articles for factual accuracy and bias.\nLearnings from the User Interviews\nLearning 1\nThe investment banker told us that he engaged with print media much more deeply compared to online news articles.\nWe encourage people to engage their System 2 and think critically when reading news articles online by highlighting strong language in the articles.\nWe try to make the experience of reading news online as close to that of thoroughly reading a newspaper.\nLearning 2\nWhile the construction worker believed that every media outlet was biased, he was passionate about no one being ‘muzzled’.\nThis motivated our dedication to avoid censoring any news content using our plugin.\nThe plug-in provides a fact-check feature and highlights strong language, but does not prevent a user from reading any article.\nLearning 3\nWe wanted to incorporate some kind of “bias” rating in our plugin\nThe news editor said that users needed to understand where the bias rating was coming from instead of just seeing a score on a scale of 1 to 10\nSo, we decided to highlight specific words and assess the tone of the article rather than just providing an overall bias score.\nStoryboarding a Solution\nFrame 1\nMeet Chuck: Chuck is on his way to work when he sees that President Trump has tweeted out that he has won the 2020 Presidential election.\nChuck normally only skims news headlines, but as the elections are an important political event, he’d like to find out more.\n\nFrame 2\nChuck navigates to a news article which says that Trump has lost the election, while Trump claims that he won by a landslide.\nChuck wants to know who is really telling the truth in this scenario.\n\nFrame 3\nChuck remembers hearing about NewsChekt and their fact-checking feature for news articles.\nHe decides to give it a try and installs the plug-in.\n\nFrame 4\nThe plug-in tells Chuck that the claims made by Trump have not been verified by the Associated Press, as well as other established media outlets such as CNN, Fox, and NBC.\n\nFrame 5\nChuck starts reading news articles regarding the election with the NewsChekt plugin installed.\nThe plugin provides Chuck information about where the media outlet that published the article lies on the political spectrum, and highlights any strong language.\nThe plugin also suggests other similar articles published by media outlets on varying scales of the political spectrum so that Chuck can get his information from a diverse set of sources.\n\nFrame 6 (final frame)\nUsing this plugin, Chuck can fact-check claims and understand what makes news articles biased.\nHe can still choose what to read and no content is censored.\nHowever, he is nudged to consume a more diverse news portfolio and engage with the news more critically using System 2.\nOur most ambitious goal is that news-readers like Chuck incentivize news outlets to produce content that has low bias scores.\n\nNext Steps\nWe need to design natural language processing algorithms that can detect strong language and the overall tone of the article.\nWe need to design algorithms that can look at claims made in a news article and suggest other articles which contradict the claim or shed more light on it.\nAnother crucial step is designing a Chrome plugin that can perform these tasks efficiently.\n\n\n\n",
+    "preview": "posts/2021-04-22-team-7/insertimagehere.gif",
+    "last_modified": "2021-05-04T21:25:29-04:00",
+    "input_file": "project_summary.utf8.md"
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to Market Design Projects",
     "description": "Welcome to our new blog, Market Design Projects. We hope you enjoy \nreading what we have to say!",
