@@ -41,7 +41,7 @@ Our decision problem focuses on how we can improve COVID-testing policies at Pen
 
 # User Interviews
 
-### Interview 1 COVID-Aware Penn Junior
+### Interview 1: COVID-Aware Penn Junior
 
 - 3/31/2021
 - The interview took place over Zoom
@@ -67,7 +67,7 @@ Our decision problem focuses on how we can improve COVID-testing policies at Pen
     + Finds it hard to remember to schedule appointment 24 hours before
     + Finds scheduling not convenient as it does not allow for walks in testing and he can only get tested on two specific days
 
-### Interview 2 COVID-Skeptic Penn Sophomore
+### Interview 2: COVID-Skeptic Penn Sophomore
 
 - 3/30/2021
 - The interview took place over Zoom
@@ -91,7 +91,7 @@ Our decision problem focuses on how we can improve COVID-testing policies at Pen
     + Would like the registration process to be easier
     + Would forget and be too lazy to go get tested before he got the vaccine
     
-### Interview 3 COVID-Aware Penn Senior
+### Interview 3: COVID-Aware Penn Senior
 
 - 3/29/2021
 - The interview took place over Zoom
@@ -113,7 +113,7 @@ Our decision problem focuses on how we can improve COVID-testing policies at Pen
     + Would like more testing days rather than just Wednesdays and Saturdays
 
     
-### Interview 4 Penn Admin
+### Interview 4: Penn Admin
 * We reached out to a few people in the Penn Administration
 * One of them responded, but said they were too busy to be interviewed
 * Did not refer us to someone else
@@ -192,10 +192,9 @@ In this second frame, we show how Amit forgot his Wednesday appointment.
 
 ![](frame5.png)
 
-## Frame 6 (final frame)
+## Frame 6: Value Creation
 
-Amit goes to get tested the very next day keeping himself and the rest of campus safer.
-- With all the new policies which make testing more accesible, Amit continues to get tested regularly for the rest of the semester.
+Amit goes to get tested the very next day keeping himself and the rest of campus safer. With all the new policies which make testing more accesible, Amit continues to get tested regularly for the rest of the semester.
 
 ![](frame6.png)
 
