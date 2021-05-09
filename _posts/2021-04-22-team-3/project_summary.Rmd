@@ -120,7 +120,7 @@ Our decision problem focuses on how we can improve COVID-testing policies at Pen
 
 # Learnings from the User Interviews
 
-### Learning 1
+### Learnings from Interview 1
 
 * Even though he wants to stay safe and never misses a test, Penn Open Pass is only used when he has to go test
 * There is a difference between living on campus and off campus that should be addressed
@@ -129,7 +129,7 @@ Our decision problem focuses on how we can improve COVID-testing policies at Pen
 * We tweaked the fact that even though the COVID-Aware Student cares, they do not follow the Penn Student Compact as strictly as we though
 * Sometimes only gets tested once a week
 
-### Learning 2 
+### Learnings from Interview 2 
 
 * A lot of COVID-Skeptic Students live off campus as they do not need to get tested regularly in order to maintain a green open pass
 * Having the vaccine affects if this student gets tested or not
@@ -138,18 +138,29 @@ Our decision problem focuses on how we can improve COVID-testing policies at Pen
 * We also tweaked the fact that this student might test if exposed
 
 
-### Learning 3
+### Learnings from Interview 3
 
 * This was another COVID-Aware student but slight differences in behavior came forward
 * As she lives on campus, she continued to get tested even after getting the vaccine
 * We learned that the majority of on campus students continue to get tested regularly differing from off campus
 * We also learned that there are not a lot of COVID-Skeptic Students, its just the system of scheduling preventing them from getting tested
 
-### Learning 4
+### Other Insights
 * We really wanted a broad sense of the community, so our team interviewed  30 people
 * This resulted in learning that there are not a lot of skeptics in the student body and the students want to be safe
 * We also realized that there is a minimum of fear by being disciplined by Penn
 * The students that we believed to be COVID-Skeptics just actively forgot to sign up before as they may have a busy day and it requires mental effort
+
+
+# Proposed Solutions
+After analyzing our user interviews, we formulated a list of potential policy changes to Penn’s COVID-19 testing program that can help reach our goal of 100% testing compliance:
+
+* Send text reminders to students about their upcoming COVID-19 testing appointments.
+* Increase availability of potential testing days for students, giving them more options. 
+* Students should automatically be assigned to time slots for COVID-19 testing for their testing days for the whole semester. This would create more of an “opt-out” system when it comes to COVID testing. 
+* Send follow-up texts and emails to students who miss their scheduled COVID-19 test appointment. In these messages, include links to reschedule their appointment. 
+* Allow same-day sign-ups for students to make up for missed COVID-19 tests and increase flexibility.
+
 
 # Storyboarding a Solution
 
