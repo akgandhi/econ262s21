@@ -1,7 +1,7 @@
 ---
-title: "Team 9"
+title: "Team 8"
 description: |
-  Let's eat: an app to dynamically and quickly choose a place and time to eat with friends by aggregating user preferences and constraints, all in one place
+  A short description of the post.
 author:
   - name: Amit Gandhi
     url: {}
