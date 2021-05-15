@@ -1,0 +1,158 @@
+---
+title: "Project Name"
+author: "Joanna Giang, Dee Xie, Siraj Qureshi, Nico Ubide"
+date: 'A project for ECON 262: Market Design'
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+tinytex::install_tinytex()
+```
+
+# Table of Contents {-}
+
+  1. Intro
+  
+  2. Decision Problem
+  
+  3. User Persona
+  
+  4. User Interview
+  
+  5. Data Collection
+  
+  6. Construct Prototype
+  
+  7. Collect Feedback
+  
+  8. Iterate & Finalize
+  
+  9. Conclusion
+
+## Intro {-}
+
+Since the Covid-19 pandemic upended modern life in America in March 2020, it has been a top priority to figure out how to stop the spread of Covid-19 with the least interruptions to daily life. At first, total lockdown was necessary, but as vaccinations emerge and cases decline, many are asking how strict restritions need to be to ensure public safety. We decided to focus on these issues as they apply to Pottruck, given that gyms are often vectors for Covid-19 spread.
+
+
+## Decision Problem {-}
+
+Since the outset of the COVID-19 pandemic, health officials have urged using extreme caution when convening in groups of larger than a few people. As a result, gyms and fitness centers, among other institutions, were forced to shut down. Now, Penn’s very own Pottruck Health and Fitness Center is in the process of reopening, and our goal is to help it undergo this process while keeping everyone safe in the face of the ongoing pandemic. Thus, the design problem we originally set out to explore was:
+
+“Who gets to work out at Pottruck and when in order to ensure the safest reopening process possible”.
+
+This problem is relevant to any and all former Penn community members that frequented Pottruck and to the staff who are required to interface with the people who use the facility. It is also a crucially important stepping stone and beta test for Penn’s anticipated full re-opening in the fall, therefore making it relevant to the broader Penn community as well.
+
+
+## User Personas {-}
+
+The user personas for our project consisted of two main user personas. Our first main user persona of interest is a gym-going undergraduate student at Penn. This user is likely aged 18-22 and is expected to visit Pottruck Gym 3-4 times a week. This user has also consistently used Pottruck facilities prior to COVID-19, therefore having a general sense of how the new COVID-19 university guidelines have impacted their Pottruck experience. Key differences regarding their experience may include lack of time slots due to limited availability, fewer available gym facilities and equipment, and discomfort from wearing a mask during intensive physical activity. 
+Our second main user persona of interest is a Pottruck staff member, likely aged anywhere between 24-45. This user is responsible for pottruck security, enforcing covid policies, and general gym maintenance/cleanliness. As staff members work directly on site and deal with issues in real time, this user has a unique perspective on safety, practicality, and student experience in the gym. Similar to the student user persona, the staff member user persona has work experience prior to COVID-19 and is able to note how the new regulations have affected their work. Key differences regarding their experience may include frustrations due to technical issues with the scheduling system, being understaffed, and feeling unsafe in their work environment.
+
+
+## User Interviews {-}
+
+User interviews consisted of 3 interviews with gym-going college students and 1 interview with a Pottruck staff member. Our staff member’s interview revealed that the fitness center is enthusiastic to welcome patrons into the gyms, however a large number of guests would be difficult to monitor according to safety procedures. On the other hand, our interviewed college students feared shortage of gym capacity excluding them from visiting; note that equipment may not be shared under social distancing protocol.The students also voiced concerns over whether they were eligible to use the fitness center or will be rejected without warning. Further, students worried that working out while wearing a mask would be difficult, since aerobic activity requires clear breathing. These findings from user interviews help us narrow in on the characteristics our solution should have.
+
+
+## Data Collection {-}
+
+The design problem has been rephrased as follows: how many people can work out at the Pottruck center safely? We discovered that it is impractical to discriminate between users’ relationship with COVID-19 to a better extent than the Penn trustees do already. A majority of the community does conform with testing, masks, and distancing, so we can make our model appropriately with this distribution of persons in mind. Therefore, who may visit the fitness center is no longer a subject of our discrimination Also, when patrons may visit the fitness center is essentially considered promptly, with individual patrons visiting based on their preference.
+
+This resolved the temporal aspect of the problem, thus our major decision focuses on how many patrons can visit safely at any given time. Most importantly, the user interviews have raised further concerns regarding how the reopening is best performed. Our solution must implement a clear interface, and address stresses regarding capacity and quality-of-life in the fitness center. We thus constructed a prototype with this data in mind; the model addresses these hypothetical scenarios experimenting with different quotas and factors such as maskless rooms.
+
+
+## Prototype/Storyboard {-}
+
+For our project, we created two prototypes to combat the main issue. In our first prototype, we outlined the user experience of Rachel, a typical gym-going Penn undergrad. If Rachel wants to visit Pottruck gym for a workout session, she will need to follow several steps in order to go. First, she needs to see if she is eligible to book an appointment at Pottruck by participating in the COVID testing program at Penn. The COVID testing program requires students to get tested twice a week. Second, in order to visit Pottruck that day, Rachel will need to fill out a symptom check on Penn Open Pass and receive a green pass which indicates that she has no symptoms nor exposure to COVID-19. If she completes both steps, she can then book an appointment for a time slot at Pottruck. When she gets to Pottruck, she will check-in with a staff member and then proceed to use gym facilities while practicing social distancing.
+
+In our second prototype, we outline the user experience of Phillip, a staff member at Pottruck. When a student, like Rachel, walks into Pottruck, Phillip will be at the front desk checking-in each person who enters. In this check-in process, Phillip will check the capacity of each room in Pottruck to ensure that there is enough space for Rachel to join. Then, Phillip will check the student’s profile, where he will confirm that Rachel has followed through with her weekly testing, has a green pass, and booked an appointment. If all steps are followed, the check-in process is completed and Phillip can then allow Rachel to enter Pottruck for her workout.
+
+``` {r, echo=FALSE, message=FALSE, results='hide'}
+#Installing our required packages:
+library(EpiModel)
+```
+
+## Collect Feedback {-}
+
+
+  In order to test our proposed solutions, we elected to use a basic epidemiological model, S (susceptible) I (infected) R (recovered). This method allows us to test effects of certain policies before having to implement them in the real world, at the potential cost of lives. We analyze Covid spread rates in multiple different policy cases to determine safety. Given the rudimentary nature of the model, relative difference in spread is a more reliable indicator of policy effectiveness than R0 numbers.
+  $$  \frac{dS}{dt}=\frac{-\beta IS}{N}
+  $$
+  We solve the above equation for S,I,R at any given t to determine how far covid has spread. Will run model for 180 days consistent with semester length, and run the model 10 times to report averages. Model starting conditions based on 1.59% positivity rate campus wide for week ending 1/26, consistent with Penn covid dashboard. Estimated max pottruck capacity at 1500 people, or double what covid capacity restrictions currently allow. Thus, we start with 24 infected.
+  
+### Base Case--No restrictions
+
+In the base case, we model covid spread in Pottruck with no restrictions. We set infection probability at 5%, more or less consistent with covid observational data. We assume 10 "interactions" daily, consistent with an hour or two average gym time. Recovery rate set at .05, such that mean recovery time is 20 and median recovery time is 14 days, consistent with real-world data. There is a .01% Infection Fatality Rate (IFR) for 20-24yo with Covid (https://www.nature.com/articles/s41586-020-2918-0)
+``` {r}
+
+
+control1 <- control.icm(type = "SIR", nsteps = 180, nsims = 10)
+
+init1 <- init.icm(s.num = 1476, i.num = 24, r.num = 0)
+
+
+param1 <- param.icm(inf.prob = 0.05, act.rate = 10, rec.rate = 1/20, 
+                   a.rate = .0, ds.rate = 0, di.rate = .0001, 
+                   dr.rate = 0)
+sim <- icm(param1, init1, control1)
+
+results1=plot(sim)
+dailycases1=plot(sim, y = "si.flow", mean.col = "red", qnts.col = "red")
+```
+
+The first graph depicts how many students are in each of the susceptible, infected, and recovered groups. It is evident that, without restrictions, pottruck becomes a covid hotspot on campus, infecting most who consistently go early on in the semester. The second graph depicts daily cases, where we can also see high infection rates as the semester goes on. Either way, this is an undesireable outcome.
+
+### Fully Implemented Recommendations
+
+  For mask wearing, we found an aggregate study that suggests covid transmission chance decreases from 17.4% to 3.1% chance of transmission, masked vs maskless. We assumed that mask wearing at pottruck would be 70% as effective as test data, due to incomplete seals, noncompliance, and different mask types. Thus, we found a factor on infection probability. $$.254=\frac{1}{\frac{17.4}{3.1}*.7} $$. Applying it to old infection probability, we obtain .0127 infection probability.
+  
+  Modeling social distancing within this framework is a bit more difficult. The imposition of social distancing is viewed as reducing capacity in Pottruck, down to 750 (calculated max daily visitors based on real-world capacity limits). Given our 2-dimensional model, since the volume of our theoretical square is halved, we will multiply number of exposures (directly correlated with distance between nodes) with a factor of 1/sqrt(2). Therefore, total exposures are 7.07 per day now.
+  
+  One point that popped up in our user interviews, both in terms of logistics and potential usefulness, is use of an outdoor weightroom. The benefit from beng outdoors in reduced covid transmission is massive, so we hypothesized that this would reduce spread. Given associated costs, we must be sure the benefit is worth it. According to a systematic peer review by Razani and colleagues (https://www.healio.com/news/infectious-disease/20201207/transmission-of-respiratory-illnesses-outdoors-definitely-happens-but-less-than-indoors), 
+there is a 18.6x less chance to transmit outdoor vs indoor. Since only the weight room is moved, we must apply this factor only to the weight room, or 36% of Pottruck's total capacity. 36*1/18.6=1.935, +64=65.93% factor on transmission chance. New factor is .00837
+
+Finally, to model testing, we will modify the initial conditions. We will assume a 70% chance to catch a covid case with testing. This is modeled as having 30% of the original initial number of infected, .3*12=3.6~=4. Due to limitations of the model, it is infeasible to incorporate testing at every iteration.
+
+``` {r}
+
+init2 <- init.icm(s.num = 746, i.num =4, r.num = 0)
+param2 <- param.icm(inf.prob = 0.00837, act.rate = 7.07, rec.rate = 1/20, 
+                    a.rate = .0, ds.rate = 0, di.rate = .0001, 
+                    dr.rate = 0)
+sim2 <- icm(param2, init2, control1)
+
+results2=plot(sim2)
+
+dailycases2=plot(sim2, y = "si.flow", mean.col = "red", qnts.col = "red")
+```
+According to these two graphs, there is a negligable rate of covid transmission over the semester once our recommendations are implemented. Even across the 10 runs, daily covid cases are well under a single case a day, and there is no accelerating covid transmission. This is a desireable outcome!
+``` {r}
+#covid control measures except for outdoor weights
+
+init3 <- init.icm(s.num = 746, i.num =4, r.num = 0)
+param3 <- param.icm(inf.prob = 0.0127, act.rate = 7.07, rec.rate = 1/20, 
+                    a.rate = .0, ds.rate = 0, di.rate = .0001, 
+                    dr.rate = 0)
+sim3 <- icm(param3, init3, control1)
+
+results3=plot(sim3)
+
+dailycases3=plot(sim3, y = "si.flow", mean.col = "red", qnts.col = "red")
+```
+
+We removed just the outdoor weight room to determine if it had an appreciable effect on model outcome. Here, notice that the margin of error across runs is very large. Over a semester, there is a chance that transmission rates stay low, but also a chance that a sizeable fraction of the population is infected. As such, we find these probabilities to be unacceptable for the safety of the students, and recommend implementing outdoor weights.
+
+
+## Iterate and Finalize {-}
+
+Given our reviewed and updated design problem, we had to go back and update the solutions we were proposing. Our user interviews gave us a clear path forward - update the model we had built to account for the reduced transmission rates the Pottruck community would now be enjoying. These are linked to multiple covid spread control measures, which we have included above. Another big takeaway from the iteration process was that outdoor weights would not be feasible due to logistical and equipment degradation issues. Our model demonstrates that it is possible to control Covid spread without outdoor weight rooms, but restrictions must be tightly enforced, and probabilities can affect spread rate greatly. 
+
+In the future, we would like to extend the SIR model to include quarantined and vaccinated sections, along with their projected rate of change. This will allow for continued modeling of policies as people get vaccinated, and we hypothesize that this will allow for further loosening of restrictions. This will also allow us to model continued covid testing over the semester. We also wanted to test whether separate, maskless rooms for the fully vaccinated would contribute to increased spread, which can be accounted for with the above modifications. 
+
+## Conclusion {-}
+
+In summary, our team used the human design process to resolve a health and safety issue facing the Penn community. The design challenge is to provide a system to reopen the Pottruck Health and Fitness Center in the best and safest manner. We identified that student patrons and gym staff are the principal agents involved, so we interviewed them in order to define our problem precisely and to help envision our product. This narrowed our question to how we introduce patrons and how many at any given time, so we used these as our parameters in modelling disease prevention in the fitness center. User insights also led us to experiment with a number of quality-of-life features in our simulation, but was ultimately limited by Covid spread rates. In conclusion, the human design process has helped us address a serious issue by producing a comprehensive understanding through its stakeholders, an understanding we have refined through our tests and iteration.
