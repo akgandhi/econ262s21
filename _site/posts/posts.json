@@ -1,31 +1,39 @@
 [
   {
-    "path": "posts/2021-04-22-team-9/",
-    "title": "Let's.eat",
-    "description": "App to dynamically and quickly choose a place and time to eat with friends by aggregating user preferences and constraints, all in one place",
+
+
+
+
+    "path": "posts/2021-04-22-team-3/",
+    "title": "COVID-19 Testing at Penn",
+    "description": "Reopening Penn safely through 100% student biweekly testing.",
     "author": [
       {
-        "name": "Brahm Wieseneck",
+        "name": "Suhita Kodali",
         "url": {}
       },
       {
-        "name": "Sabrina Peltier",
+        "name": "Mariana Luna",
         "url": {}
       },
       {
-        "name": "Ellen Manford",
+        "name": "Vishesh Shah",
         "url": {}
       },
       {
-        "name": "Ivan Camps",
+        "name": "Daniel Wang",
         "url": {}
       }
     ],
-    "date": "2021-04-27",
+    "date": "2021-05-01",
     "categories": [],
-    "contents": "\nProblem Statement\nPlace a short description (3 sentences max) of your problem.\nExplain the decision inefficiency in the state of problem today.\nWhy is it importnat or worth solving?\nUser Personas\nPersona 1\n\nPersona 2\n\nPersona 3\n\nConversation Starters\nStarter 1\nStarter 2\nStarter 3\nStarter 4\nStarter 5.\nUser Interviews\nInterview 1 Name\nWhen did it happen\nHow did it happen\nInterview 2 Name\nWhen did it happen\nHow did it happen\nInterview 3 Name\nWhen did it happen\nHow did it happen\nLearnings from the User Interviews\nLearning 1\nwhat did you tweak in problem or persona understanding\nLearning 2\nwhat did you tweak in your problem or persona understanding\nLearning 3\nwhat did you tweak in your problem or persona understanding.\nStoryboarding a Solution\nFrame 1\nIn the first frame start with the user and their basic situation/problem before experiencing your solution.\nPoint 1\nPoint 2\nPoint 3\n\nFrame 2 to N-1\nExplain each frame with bullet points\nPoint 1\nPoint 2\nPoint 3\n\nFrame N (final frame)\nIllustrate the value creation in the final frame (e.g., problem solved!)\n\nNext Steps\nWhat are your next steps if you pursue the project further\n\n\n\n",
-    "preview": "posts/2021-04-22-team-9/insertimagehere.gif",
-    "last_modified": "2021-04-27T17:11:45-04:00",
+    "contents": "\nProblem Statement\nPlace a short description (3 sentences max) of your problem. - Explain the decision inefficiency in the state of problem today. - Why is it important or worth solving?\nOur decision problem focuses on how we can improve Covid-testing policies at Penn to get 100% of the student body tested twice a week. Not all students fully participate in testing at Penn despite it being available for free, and we wanted to find out why. This is important because Penn’s Covid recovery directly impacts the local Philadelphia community both health-wise and economically, and proper adherence to Covid-testing is key to opening campus back up safely.\nUser Personas\nPersona 1\n\nPersona 2\n\nPersona 3\n\nConversation Starters\nHow often do you get tested?\nHow would you rate the testing appointment scheduling experience in terms of usability?\nDo you think the consequences for violating Penn’s Covid Student Campus Compact are too light? Too severe?\nHow often do you complete PennOpen Pass and why?\nHave you ever tested positive for COVID?\nUser Interviews\nInterview 1 Name\nWhen did it happen\nHow did it happen\nInterview 2 Name\nWhen did it happen\nHow did it happen\nInterview 3 Name\nWhen did it happen\nHow did it happen\nLearnings from the User Interviews\nLearning 1\nwhat did you tweak in problem or persona understanding\nLearning 2\nwhat did you tweak in your problem or persona understanding\nLearning 3\nwhat did you tweak in your problem or persona understanding.\nStoryboarding a Solution\nFrame 1\nIn the first frame start with the user and their basic situation/problem before experiencing your solution.\nAmit is a junior at Penn who wants to be COVID-safe but forgets to get tested regularly.\nHe tries his best to follow COVID regulations according to Penn’s campus compact, but finds that it’s difficult to manage classes, a social life, and his mental health with pandemic safety.\nHe understands the importance of testing but but finds the restrictions around scheduling an appointment complicated and too annoying.\n\nFrame 2 to N-1\nExplain each frame with bullet points\nPoint 1\nPoint 2\nPoint 3\n\nFrame N (final frame)\nIllustrate the value creation in the final frame (e.g., problem solved!)\n\nNext Steps\nWhat are your next steps if you pursue the project further\nIf we pursue the project further, the next step would be to reach back out to the Penn Covid Task Force and ask for a sit-down with them to understand the challenges they face as well as to potentially propose a few of our solutions.\nTo go a step further, we thought of building an all-in-one app that keeps track of everything Covid-related: testing appointments, results, open pass, and eventually Covid vaccination records. Additionally, we can incorporate a gamified and social component within the app in order to incentivize students to get tested regularly.\n\n\n\n\n",
+    "preview": "posts/2021-04-22-team-3/insertimagehere.gif",
+    "last_modified": "2021-05-01T00:04:05-04:00",
+
+
+
+
     "input_file": "project_summary.utf8.md"
   },
   {
@@ -44,5 +52,34 @@
     "preview": {},
     "last_modified": "2021-04-22T16:17:41+00:00",
     "input_file": {}
+  },
+  {
+    "path": "posts/2021-04-22-team-1/",
+    "title": "Your Project Title Here",
+    "description": "A short description.",
+    "author": [
+      {
+        "name": "Person 1",
+        "url": {}
+      },
+      {
+        "name": "Person 2",
+        "url": {}
+      },
+      {
+        "name": "Person 3",
+        "url": {}
+      },
+      {
+        "name": "Person 4",
+        "url": {}
+      }
+    ],
+    "date": "2021-04-22",
+    "categories": [],
+    "contents": "\nProblem Statement\nPlace a short description (3 sentences max) of your problem.\nExplain the decision inefficiency in the state of problem today.\nWhy is it importnat or worth solving?\nUser Personas\nPersona 1\n\nPersona 2\n\nPersona 3\n\nConversation Starters\nStarter 1\nStarter 2\nStarter 3\nStarter 4\nStarter 5.\nUser Interviews\nInterview 1 Name\nWhen did it happen\nHow did it happen\nInterview 2 Name\nWhen did it happen\nHow did it happen\nInterview 3 Name\nWhen did it happen\nHow did it happen\nLearnings from the User Interviews\nLearning 1\nwhat did you tweak in problem or persona understanding\nLearning 2\nwhat did you tweak in your problem or persona understanding\nLearning 3\nwhat did you tweak in your problem or persona understanding.\nStoryboarding a Solution\nFrame 1\nIn the first frame start with the user and their basic situation/problem before experiencing your solution.\nPoint 1\nPoint 2\nPoint 3\n\nFrame 2 to N-1\nExplain each frame with bullet points\nPoint 1\nPoint 2\nPoint 3\n\nFrame N (final frame)\nIllustrate the value creation in the final frame (e.g., problem solved!)\n\nNext Steps\nWhat are your next steps if you pursue the project further\n\n\n\n",
+    "preview": "posts/2021-04-22-team-1/insertimagehere.gif",
+    "last_modified": "2021-04-22T18:44:17+00:00",
+    "input_file": "project_summary.utf8.md"
   }
 ]
